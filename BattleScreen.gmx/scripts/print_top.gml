@@ -2,7 +2,7 @@
 global.focus = true;
 if (global.characters < global.message_length)
 {
-    hold = keyboard_check(ord("Z"));
+    hold = (keyboard_check(ord("Z")) || keyboard_check(ord("K")));
     global.characters += global.increase * (1 + hold);
     global.message_draw = string_copy(global.message[global.message_current], 0, global.characters);    
 }
@@ -14,7 +14,7 @@ else
     {
         instance_create(1856, 256, obj_arrow)
     }
-    if(keyboard_check_pressed(ord("Z")))
+    if(keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("K")))
     {
         if(global.message_current < global.message_end)
         {
@@ -25,7 +25,7 @@ else
         }
         else
         {
-            if(keyboard_check_pressed(ord("Z")))
+            if(keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("K")))
             {
                 global.message_draw = "";
                 global.focus = false;
