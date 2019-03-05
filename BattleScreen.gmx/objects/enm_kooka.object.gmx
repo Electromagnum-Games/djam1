@@ -33,7 +33,7 @@ global.enemy[? "attack"] = 1;
 global.enemy[? "defense"] = 1;
 global.enemy[? "min_damage"] = 1;
 global.enemy[? "max_damage"] = 2;
-global.enemy[? "intro_text"] = "Kooka Bomber intro text!";
+global.enemy[? "intro_text"] = "Kooka Bomber tries to dive bomb you! Its momentum nearly makes it crash.";
 init_text(global.enemy[? "intro_text"]);
 </string>
           </argument>

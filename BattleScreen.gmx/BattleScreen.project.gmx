@@ -41,6 +41,10 @@
       <sprite>sprites\spr_igloo_girl</sprite>
       <sprite>sprites\spr_item_seller</sprite>
     </sprites>
+    <sprites name="Items">
+      <sprite>sprites\spr_item</sprite>
+      <sprite>sprites\spr_weapon</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_beach</background>
@@ -68,7 +72,6 @@
   <fonts name="fonts">
     <font>fonts\fnt_box</font>
     <font>fonts\fnt_nums</font>
-    <font>fonts\fnt_top</font>
   </fonts>
   <objects name="objects">
     <objects name="GUI">
@@ -110,6 +113,7 @@
       <object>objects\npc_igloo_girl</object>
       <object>objects\npc_item_seller</object>
     </objects>
+    <object>objects\obj_item_init</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>

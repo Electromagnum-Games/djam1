@@ -68,7 +68,8 @@
           <argument>
             <kind>1</kind>
             <string>///Draw print text
-draw_text(16, 16, global.message_draw);
+draw_set_font(fnt_nums);
+draw_text_ext(16, 16, global.message_draw, 70, 1900);
 </string>
           </argument>
         </arguments>

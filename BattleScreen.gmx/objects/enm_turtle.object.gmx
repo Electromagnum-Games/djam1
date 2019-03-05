@@ -33,7 +33,7 @@ global.enemy[? "attack"] = 0;
 global.enemy[? "defense"] = 4;
 global.enemy[? "min_damage"] = 1;
 global.enemy[? "max_damage"] = 3;
-global.enemy[? "intro_text"] = "No. 3 Mom intro text!";
+global.enemy[? "intro_text"] = "No. 3 Mom gets protective of her eggs as you approach! But only for a moment.";
 init_text(global.enemy[? "intro_text"]);
 </string>
           </argument>

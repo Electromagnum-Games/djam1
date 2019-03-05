@@ -33,7 +33,7 @@ global.enemy[? "attack"] = 2;
 global.enemy[? "defense"] = 0;
 global.enemy[? "min_damage"] = 1;
 global.enemy[? "max_damage"] = 3;
-global.enemy[? "intro_text"] = "Mr. Snake intro text!";
+global.enemy[? "intro_text"] = "Mr. Snake slithers up to you! It mentions something about a " + chr(22) + "homemade remedy" + chr(22) + " it could sell you.";
 init_text(global.enemy[? "intro_text"]);
 </string>
           </argument>

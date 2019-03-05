@@ -51,6 +51,7 @@ msg = get_string_async("Please enter your name (10 characters max).", "Sam");
           <argument>
             <kind>1</kind>
             <string>var name_id = ds_map_find_value(async_load, "id");
+space_count = 0;
 if name_id == msg
 {
     if ds_map_find_value(async_load, "status")
@@ -58,6 +59,22 @@ if name_id == msg
         if ds_map_find_value(async_load, "result") != ""
         {
             global.name = ds_map_find_value(async_load, "result");
+            for(i = 1; i &lt; 11; i++)
+            {
+                if string_char_at(global.name, i) == chr(32)
+                {
+                    space_count += 1;
+                }
+                else
+                {
+                    space_count = 0;
+                    break;
+                }
+                if space_count != 0
+                {
+                    global.name = "Sam";
+                }
+            }
             if string_length(global.name) &gt; 10
             {
                 global.name = string_copy(global.name, 1, 10);

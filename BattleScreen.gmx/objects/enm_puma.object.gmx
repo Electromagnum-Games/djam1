@@ -33,7 +33,7 @@ global.enemy[? "attack"] = 3;
 global.enemy[? "defense"] = 1;
 global.enemy[? "min_damage"] = 1;
 global.enemy[? "max_damage"] = 3;
-global.enemy[? "intro_text"] = "Awkward Puma intro text!";
+global.enemy[? "intro_text"] = "Awkward Puma shuffles up to you! It nearly falls over in the process.";
 init_text(global.enemy[? "intro_text"]);
 </string>
           </argument>
